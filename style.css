@@ -1,61 +1,111 @@
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-h1 { 
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-
-
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .botao-saiba-mais {
-
-    background-color: orangered;
-    
-
+  background-color: #e97145;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 150px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  color: whitesmoke;
+  text-align: center;
 }
-
 
 h2 {
-    margin: 0 auto;
-    text-align: center;
-    color: rgb(255, 255, 255);
-
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-
-    background-color: rgb(49, 49, 125)
+body {
+  background-color: #f4f7f6;
+  margin: 0;
 }
 
-.main{  
-   
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 900px;
-margin: 0 auto; 
+header {
+  background-color: #181f85d1;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
 
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .card {
-    margin: 3px;
-    background-color: grey;
-    width: 1000px;
-    height: 500px;
-    border-radius:10px;
-    background-color: white;
-    text-align: center;
+  margin: 3px;
+  background-color: grey;
+  width: 400px;
+  height: 150px;
+  border-radius: 12px;
+  border: 1.5px solid #ff7f50;
+  padding: 25px;
+  background-color: rgb(251, 242, 229);
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  text-align: left;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
 
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
 
+.badge {
+  background-color: #e97145;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.card-title {
+  color: #1a3a5a;
+  font-size: 1.15rem;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.card-description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-left: 55px;
+}
+
+.card:nth-child(10) {
+  grid-column: 2;
 }

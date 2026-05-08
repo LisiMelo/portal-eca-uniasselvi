@@ -1,0 +1,61 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 { 
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+
+
+}
+
+.botao-saiba-mais {
+
+    background-color: orangered;
+    
+
+}
+
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+body{
+
+    background-color: rgb(49, 49, 125)
+}
+
+.main{  
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+margin: 0 auto; 
+
+}
+
+.card {
+    margin: 3px;
+    background-color: grey;
+    width: 1000px;
+    height: 500px;
+    border-radius:10px;
+    background-color: white;
+    text-align: center;
+
+
+}

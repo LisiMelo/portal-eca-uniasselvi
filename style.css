@@ -1,3 +1,36 @@
+html {
+    scroll-behavior: smooth; 
+}
+.menu-navegacao {
+      
+    display: flex;
+    justify-content: center; 
+    gap: 100px;               
+    margin-top: 30px;        
+    margin-bottom: 30px;
+    
+}
+
+.btn-menu {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff7f50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    font-family: "Segoe UI", sans-serif;
+    
+}
+
+
+.btn-menu:hover {
+    background-color: #ffffff;
+    color: #1a3a5a;
+    border-color: #ff8c42;
+    
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,22 +52,7 @@ h1 {
   margin-top: 20px;
 }
 
-.botao-saiba-mais {
-  background-color: #ff8c42;
-  margin-bottom: 50px;
-  height: 50px;
-  width: 150px;
-  font-family: "Poppins", sans-serif;
-  border-radius: 10px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.404);
-  transition: all 0.3s ease;
-}
+
 
 h2 {
   text-align: center;
@@ -68,25 +86,23 @@ p {
 }
 
 .main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    max-width: 1300px;  /* 1. Limita a largura máxima para os cards não sumirem para os lados */
+    margin: 0 auto;     /* 2. A MÁGICA: Centraliza a caixa inteira perfeitamente no meio da tela */
+    padding: 20px;
+  
 }
 
 .card {
-  margin: 3px;
-  background-color: grey;
-  width: 400px;
-  min-height: 160px;
+  
+  width: 100%;
   border-radius: 15px;
-  border: 1.5px solid #c1bbb6;
+  border: 1.5px solid #f4eeeb;
   border-width: 2px;
   padding: 25px;
-  background-color: rgba(253, 244, 235, 0.703);
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.703);
   box-shadow: 0 8px 15px rgba(179, 162, 162, 0.05);
   transition: box-shadow 0.3s ease;
   text-align: left;
@@ -104,31 +120,32 @@ p {
   font-family: "Segoe UI", sans-serif;
 }
 
-.badge {
-  background-color: #ff9238;
-  color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  flex-shrink: 0;
+.icone-card {
+    background-color: #fff0e6; 
+    color: #ff8c42;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 32px; 
+    flex-shrink: 0;
+
 }
 
 .card-title {
   color: #1a3a5a;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0;
   font-family: "Segoe UI", sans-serif;
 }
 
 .card-description {
   color: #504d4dd0;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin-left: 55px;
+  margin-left: 70px;
   text-align: left;
 }
 

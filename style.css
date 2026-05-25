@@ -180,8 +180,8 @@ p {
   text-align: left;
 }
 .card:hover {
-  box-shadow: 0 12px 25px rgba(90, 95, 111, 0.181);
-  border-color: #ff8c42;
+  box-shadow: 0 12px 25px rgba(90, 95, 111, 0.181); /* Aumenta a sombra, fazendo o card "flutuar" */
+    border-color: #ff8c42;
 }
 
 .card-header {
@@ -537,11 +537,13 @@ span {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   padding: 30px;
   transition: all 0.3s ease;
+  border: 1.5px solid #f4eeeb;
+  border-width: 2px;   
 }
 
 .card-horizontal:hover {
-  box-shadow: 0 12px 25px rgba(90, 95, 111, 0.181);
-  border-color: #ff8c42;
+    box-shadow: 0 12px 25px rgba(90, 95, 111, 0.181); /* Aumenta a sombra, fazendo o card "flutuar" */
+    border-color: #ff8c42; /* Pinta a borda de laranja */
 }
 
 .bloco-texto {

@@ -132,7 +132,7 @@ a {
 
 h1 {
   text-align: center;
-  color:#ffffff;
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 28px;
   margin-bottom: 20px;
@@ -147,6 +147,7 @@ h2 {
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: 400;
+  margin-top: 5px;
 }
 
 body {
@@ -517,18 +518,14 @@ span {
 }
 
 .subtitulo-conselhos {
-
   text-align: center;
   color: #504d4dd0;
   margin: 0 auto 30px;
-  color: #666666; 
+  color: #666666;
   font-size: 1.3rem;
   max-width: 800px;
   font-weight: 400;
-  
 }
-
-
 
 .lista-conselhos-horizontal {
   display: flex;
@@ -605,18 +602,59 @@ span {
   display: block;
 }
 
-.cabecalho-denuncia h2 {
-  font-size: 38px;
-  font-family: "Segoe UI Symbol";
-}
-
-.cabecalho-denuncia p {
+.cabecalho-denuncia {
   text-align: center;
-  color: #8892a0;
-  font-weight: 300;
-  font-family: "Poppins" sans-serif;
+  margin-bottom: 50px; /* Dá um respiro antes de começar os cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Garante que a etiqueta e os textos fiquem no meio */
 }
 
+/* A Etiqueta (Pílula com o escudo) */
+.tag-protecao {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 140, 66, 0.5); /* Borda laranja levemente transparente */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* Fundo quase invisível para dar destaque */
+  color: #ff8c42; /* Laranja */
+  padding: 6px 20px;
+  border-radius: 40px; /* Deixa os cantos totalmente redondos */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.tag-protecao span {
+  font-size: 24px; /* Deixa o ícone do escudo um pouco maior */
+}
+
+/* O Título Principal */
+.cabecalho-denuncia h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: white;
+  margin: 0 0 15px 0;
+}
+
+/* O Parágrafo Explicativo */
+.cabecalho-denuncia p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #cbd5e1; /* Cinza clarinho elegante */
+  max-width: 700px; /* O SEGREDO: Impede que o texto estique de ponta a ponta na tela */
+  margin: 0 auto; /* Centraliza o bloco de texto */
+  line-height: 1.6;
+  font-size: 16px;
+}
 .secao-denuncia {
   background-color: #1c3553; /* Fundo escuro */
   padding: 80px 20px;
@@ -625,8 +663,8 @@ span {
 }
 
 .container-denuncia {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1200px; /* Aumente este número para esticar a caixa pai */
+  margin: 0 auto; /* Mantém tudo centralizado na tela */
 }
 
 .grid-denuncia {
@@ -637,12 +675,30 @@ span {
 }
 
 .card-denuncia {
-  background-color: #243f5f;
+  background-color: #243f5f; /* Azul escuro do card */
   padding: 35px;
   border-radius: 12px;
-  text-align: left;
+  text-align: left; /* GARANTE O ALINHAMENTO À ESQUERDA PARA TODOS */
+  font-family: "Poppins", sans-serif; /* FORÇA A FONTE DO PROJETO */
   transition: transform 0.3s ease;
-  box-shadow: #000000b3;
+}
+
+.card-denuncia p {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #cbd5e1; /* Cor para legibilidade no escuro */
+  line-height: 1.6;
+  margin: 0;
+}
+
+.card-denuncia h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: white;
+  margin: 20px 0 15px 0;
 }
 
 .card-denuncia .icone-card {
@@ -653,18 +709,23 @@ span {
 }
 
 .card-destaque .icone-card {
-  border-radius: 30%;
-  color: #ffffff;
-  background-color: #fad4bc44;
-  margin: left;
+  color: white;
+  background-color: #e2e8f03f;
 }
 
 .card-destaque {
-  background-color: #ff8c42;
+  background-color: #ff8c42; /* Pinta o fundo de laranja */
+  text-align: left; /* Garante que o card laranja também alinhe à esquerda */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .categoria {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   opacity: 0.8;
 }
@@ -674,6 +735,161 @@ span {
   margin: 10px 0;
 }
 
+.card-denuncia:not(.card-destaque) {
+  background-color: #2a4365;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card-denuncia:not(.card-destaque):hover {
+  background-color: #3f5f8a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-destaque:hover {
+  background-color: #ff8a42df;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-destaque h3,
+.card-destaque p,
+.card-destaque .categoria {
+  color: white;
+}
+
+.link-denuncia {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.card-denuncia .link-denuncia {
+  color: #ff8c42;
+}
+
+.card-destaque .link-denuncia {
+  color: white;
+}
+
+.link-denuncia span {
+  transition: transform 0.2s ease;
+}
+
+.link-denuncia:hover span {
+  transform: translateX(5px);
+}
+
+.link-denuncia,
+.link-denuncia span {
+  color: #ff8c42;
+  transition: color 0.3s ease;
+}
+
+.card-destaque .link-denuncia,
+.card-destaque .link-denuncia span {
+  color: white;
+}
+
+.rodape-principal {
+  background-color: #172b43;
+  padding: 80px 20px 20px 20px;
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.grid-rodape {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+}
+
+.coluna-rodape h4 {
+  color: white;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  text-align: left;
+}
+
+.coluna-rodape p,
+.coluna-rodape li {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+  text-align: left;
+}
+
+.coluna-rodape p span.texto-laranja {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.lista-recursos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coluna-rodape a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.coluna-rodape a:hover {
+  color: #ff8c42;
+}
+
+.texto-laranja {
+  color: #ff8c42;
+  font-weight: 400;
+}
+
+.link-laranja-rodape {
+  color: #ff8c42;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.link-laranja-rodape:hover {
+  text-decoration: underline;
+}
+
+.rodape-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rodape-bottom p {
+  color: #a0aec0;
+  font-size: 13px;
+  margin: 5px 0;
+}
 @media (max-width: 768px) {
   .card-horizontal {
     flex-direction: column;
@@ -712,5 +928,15 @@ span {
 
   .area-destaque {
     padding: 20px;
+  }
+
+  .grid-rodape {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .coluna-rodape p {
+    text-align: center;
   }
 }

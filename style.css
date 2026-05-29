@@ -1336,34 +1336,60 @@ span {
     margin-bottom: 5px;
   }
 
-  .banner-fundacao h1 {
-    font-size: 32px;
-  }
+  .hero-fundacao {
+        padding: 50px 20px 60px 20px; /* Reduz o espaço no topo e embaixo */
+    }
 
-  .container-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
+    .hero-fundacao h1 {
+        font-size: 38px; /* Título menor para não quebrar muitas linhas na tela pequena */
+        line-height: 1.2;
+    }
 
-  .container-grid-missao {
-    grid-template-columns: 1fr; /* Coloca o texto em cima e os cartões em baixo */
-    gap: 50px;
-  }
+    .descricao-hero {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
 
-  .coluna-texto-missao p {
-    text-align: left; /* Remove o justify em ecrãs pequenos para melhor leitura */
-  }
+    .linha-estatisticas {
+        flex-direction: column; /* Destrói a linha e empilha as estatísticas na vertical */
+        gap: 25px; /* Espaço entre cada número */
+    }
 
-  .coluna-cards-missao {
-    grid-template-columns: 1fr; /* Empilha os 4 cartões de anos numa única coluna */
-  }
 
-  .grid-programas {
-    grid-template-columns: 1fr; /* Empilha os cartões coloridos */
-    gap: 20px;
-  }
+    /* --- 2. NOSSA MISSÃO E HISTÓRIA --- */
+    .secao-missao {
+        padding: 60px 20px;
+    }
 
-  .cabecalho-programas {
-    margin-bottom: 40px;
-  }
+    .container-grid-missao {
+        grid-template-columns: 1fr; /* Coloca o texto em cima e os cartões embaixo */
+        gap: 40px;
+    }
+
+    .coluna-texto-missao p {
+        text-align: left; /* Tira o justificado para não criar "buracos" no texto no celular */
+    }
+
+    .coluna-cards-missao {
+        grid-template-columns: 1fr; /* Empilha os 4 cartões de anos em uma única coluna */
+    }
+
+
+    /* --- 3. PROJETOS EM AÇÃO (PROGRAMAS) --- */
+    .secao-programas {
+        padding: 60px 20px;
+    }
+
+    .cabecalho-programas h2 {
+        font-size: 32px;
+    }
+
+    .grid-programas {
+        grid-template-columns: 1fr; /* Empilha os cartões coloridos */
+        gap: 20px;
+    }
+
+    .card-projeto {
+        padding: 30px 25px; /* Reduz um pouco a "gordura" interna do cartão no mobile */
+    }
 }

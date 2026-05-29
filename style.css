@@ -1341,8 +1341,8 @@ span {
     }
 
     .hero-fundacao h1 {
-        font-size: 32px;
-        word-wrap: break-word; /* Evita que palavras grandes quebrem o layout */
+        font-size: 38px; /* Título menor para não quebrar muitas linhas na tela pequena */
+        line-height: 1.2;
     }
 
     .container-hero {

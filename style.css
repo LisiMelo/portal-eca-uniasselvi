@@ -1341,8 +1341,14 @@ span {
     }
 
     .hero-fundacao h1 {
-        font-size: 38px; /* Título menor para não quebrar muitas linhas na tela pequena */
-        line-height: 1.2;
+        font-size: 32px;
+        word-wrap: break-word; /* Evita que palavras grandes quebrem o layout */
+    }
+
+    .container-hero {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .descricao-hero {
@@ -1350,9 +1356,30 @@ span {
         margin-bottom: 40px;
     }
 
+    .barra-navegacao {
+        padding: 15px 10px;
+    }
+
+    .menu-navegacao {
+        display: flex;
+        flex-wrap: wrap; /* Faz os links quebrarem para a linha de baixo se não couberem */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu-navegacao a {
+        font-size: 13px; /* Diminui um pouquinho a fonte do menu no celular */
+    }
+
     .linha-estatisticas {
-        flex-direction: column; /* Destrói a linha e empilha as estatísticas na vertical */
-        gap: 25px; /* Espaço entre cada número */
+        display: flex;
+        flex-direction: column; /* Força o empilhamento vertical */
+        width: 100%; /* Ocupa apenas o espaço real do celular */
+        gap: 20px;
+    }
+
+    .item-estatistica {
+        width: 100%; /* Garante que o item se ajuste perfeitamente */
     }
 
 

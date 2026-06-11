@@ -601,9 +601,8 @@ span {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
-
 
 .tag-protecao {
   display: inline-flex;
@@ -683,7 +682,7 @@ span {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: #cbd5e1; 
+  color: #cbd5e1;
   line-height: 1.6;
   margin: 0;
 }
@@ -937,7 +936,6 @@ span {
 }
 
 .tag-fundacao span {
-
   color: #ff8c42;
 }
 
@@ -1188,6 +1186,10 @@ span {
   color: #2563eb;
 }
 
+.card-azul span {
+  color: #2563eb;
+}
+
 .card-laranja {
   background-color: #fff8f0;
 }
@@ -1198,6 +1200,10 @@ span {
 .card-laranja h3,
 .card-laranja .categoria-projeto,
 .card-laranja p {
+  color: #ea580c;
+}
+
+.card-laranja span {
   color: #ea580c;
 }
 
@@ -1214,6 +1220,10 @@ span {
   color: #16a34a;
 }
 
+.card-verde span {
+  color: #16a34a;
+}
+
 .card-roxo {
   background-color: #faf5ff;
 }
@@ -1221,6 +1231,11 @@ span {
   background-color: #f3e8ff;
   color: #9333ea;
 }
+
+.card-roxo span {
+  color: #9333ea;
+}
+
 .card-roxo h3,
 .card-roxo .categoria-projeto,
 .card-roxo p {
@@ -1548,58 +1563,57 @@ span {
     padding: 30px 25px;
   }
 
-  .secao-localizacao, 
-    .container-localizacao {
-        width: 100% !important;
-        box-sizing: border-box !important;
-        overflow: hidden !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
+  .secao-localizacao,
+  .container-localizacao {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
 
-    .grid-cards-loc {
-        display: flex !important;
-        flex-direction: column !important;
-        width: 100% !important;
-        gap: 15px !important;
-    }
+  .grid-cards-loc {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 15px !important;
+  }
 
-    .card-loc {
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
+  .card-loc {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
 
-    .card-contato-amplo {
-        display: flex !important;
-        flex-direction: column !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        padding: 25px 15px !important;
-    }
+  .card-contato-amplo {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 25px 15px !important;
+  }
 
-    .info-contato, .info-contato ul {
-        width: 100% !important;
-    }
+  .info-contato,
+  .info-contato ul {
+    width: 100% !important;
+  }
 
-    .info-contato li {
-        width: 100% !important;
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-        word-break: break-all !important;
-    }
+  .info-contato li {
+    width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: break-all !important;
+  }
 
- 
-    .botoes-contato {
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        margin-top: 15px !important;
-    }
+  .botoes-contato {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 15px !important;
+  }
 
-    .botoes-contato a {
-        width: 100% !important;
-        box-sizing: border-box !important;
-        justify-content: center !important;
-    }
-
+  .botoes-contato a {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+  }
 }

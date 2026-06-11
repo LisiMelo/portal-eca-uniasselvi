@@ -56,15 +56,9 @@ a {
   position: absolute; /* Deixa a linha livre para flutuar debaixo do texto */
   left: 0; /* Alinha no canto esquerdo da palavra */
   bottom: 0; /* Cola na base da palavra */
-
-  /* O Design da Linha */
   height: 2px; /* A grossura da linha */
-  background-color: #ff8c42; /* O seu laranja */
-
-  /* O estado inicial: encolhida! */
+  background-color: #ff8c42;
   width: 0%;
-
-  /* A instrução de animação (demora 0.3 segundos para crescer) */
   transition: width 0.3s ease;
 }
 
@@ -159,7 +153,7 @@ body {
 p {
   text-align: center;
   color: #1a3a5a;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Segoe UI", sans-serif;
   margin-bottom: 10px;
   margin-top: 30px;
@@ -170,8 +164,8 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  max-width: 1300px; /* 1. Limita a largura máxima para os cards não sumirem para os lados */
-  margin: 0 auto; /* 2. A MÁGICA: Centraliza a caixa inteira perfeitamente no meio da tela */
+  max-width: 1300px; /* limita a largura máxima para os cards não sumirem para os lados */
+  margin: 0 auto; /*Centraliza a caixa inteira perfeitamente no meio da tela */
   padding: 20px;
   background-color: #ffffff;
 }
@@ -287,7 +281,7 @@ p {
 }
 
 span {
-  color: #ff8c42;
+  color: #ffffff;
   font-weight: 700;
   font-size: 1.2rem;
   display: block;
@@ -604,27 +598,27 @@ span {
 
 .cabecalho-denuncia {
   text-align: center;
-  margin-bottom: 50px; /* Dá um respiro antes de começar os cards */
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Garante que a etiqueta e os textos fiquem no meio */
+  align-items: center; 
 }
 
-/* A Etiqueta (Pílula com o escudo) */
+
 .tag-protecao {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid rgba(255, 140, 66, 0.5); /* Borda laranja levemente transparente */
+  border: 1px solid rgba(255, 140, 66, 0.5);
   background-color: rgba(
     255,
     255,
     255,
     0.05
   ); /* Fundo quase invisível para dar destaque */
-  color: #ff8c42; /* Laranja */
+  color: #ff8c42;
   padding: 6px 20px;
-  border-radius: 40px; /* Deixa os cantos totalmente redondos */
+  border-radius: 40px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -633,7 +627,8 @@ span {
 }
 
 .tag-protecao span {
-  font-size: 24px; /* Deixa o ícone do escudo um pouco maior */
+  font-size: 24px;
+  color: #ff8c42;
 }
 
 /* O Título Principal */
@@ -649,21 +644,21 @@ span {
 .cabecalho-denuncia p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  color: #cbd5e1; /* Cinza clarinho elegante */
-  max-width: 700px; /* O SEGREDO: Impede que o texto estique de ponta a ponta na tela */
+  color: #cbd5e1;
+  max-width: 700px; /*Impede que o texto estique de ponta a ponta na tela */
   margin: 0 auto; /* Centraliza o bloco de texto */
   line-height: 1.6;
   font-size: 16px;
 }
 .secao-denuncia {
-  background-color: #1c3553; /* Fundo escuro */
+  background-color: #1c3553;
   padding: 80px 20px;
-  color: white; /* Letras brancas para dar contraste */
+  color: white;
   text-align: center;
 }
 
 .container-denuncia {
-  max-width: 1200px; /* Aumente este número para esticar a caixa pai */
+  max-width: 1200px;
   margin: 0 auto; /* Mantém tudo centralizado na tela */
 }
 
@@ -675,7 +670,7 @@ span {
 }
 
 .card-denuncia {
-  background-color: #243f5f; /* Azul escuro do card */
+  background-color: #243f5f;
   padding: 35px;
   border-radius: 12px;
   text-align: left; /* GARANTE O ALINHAMENTO À ESQUERDA PARA TODOS */
@@ -688,7 +683,7 @@ span {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: #cbd5e1; /* Cor para legibilidade no escuro */
+  color: #cbd5e1; 
   line-height: 1.6;
   margin: 0;
 }
@@ -714,7 +709,7 @@ span {
 }
 
 .card-destaque {
-  background-color: #ff8c42; /* Pinta o fundo de laranja */
+  background-color: #ff8c42;
   text-align: left; /* Garante que o card laranja também alinhe à esquerda */
   border: 1px solid rgba(255, 255, 255, 0.15);
   transition:
@@ -891,13 +886,11 @@ span {
   margin: 5px 0;
 }
 
-/* ====================================================== */
 /* PÁGINA: FUNDAÇÃO PÃO DOS POBRES (ESTRUTURA NOVA)       */
-/* ====================================================== */
 
 .hero-fundacao {
-  background-color: #244677; /* O azul vibrante da sua imagem */
-  padding: 80px 20px 100px 20px; /* Muito espaço embaixo para dar respiro */
+  background-color: #244677;
+  padding: 80px 20px 100px 20px;
 }
 
 .container-hero {
@@ -905,7 +898,7 @@ span {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* O SEGREDO: Puxa todos os elementos para a esquerda */
+  align-items: flex-start; /*Puxa todos os elementos para a esquerda */
 }
 
 /* O link de voltar */
@@ -932,7 +925,7 @@ span {
   gap: 8px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: #ff8a423b;
-  color: #ff8c42; /* O Laranja */
+  color: #ff8c42;
   padding: 6px 20px;
   border-radius: 50px;
   font-family: "Poppins", sans-serif;
@@ -943,14 +936,18 @@ span {
   margin-bottom: 30px;
 }
 
-/* O Título Gigante */
+.tag-fundacao span {
+
+  color: #ff8c42;
+}
+
 .hero-fundacao h1 {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 56px; /* Aumentamos o tamanho para ficar igual ao design */
-  font-weight: 800; /* Deixa a letra bem "gordinha" e imponente (Bold) */
-  line-height: 1.1; /* Aproxima a frase laranja da branca */
-  text-align: left; /* Garante que o texto não tente centralizar */
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: left;
   margin: 0 0 20px 0;
 }
 
@@ -963,21 +960,18 @@ span {
 .descricao-hero {
   font-family: "Poppins", sans-serif;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 16px; /* Reduzimos o tamanho para dar contraste com o título gigante */
-  font-weight: 400; /* Fonte mais fina para leitura confortável */
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.6;
-  max-width: 800px; /* Limita a largura para quebrar a linha no lugar certo */
-  text-align: left; /* Garante o alinhamento à esquerda */
+  max-width: 800px;
+  text-align: left;
   margin: 0 0 50px 0;
 }
 
-/* ====================================================== */
 /* A LINHA DE ESTATÍSTICAS                                */
-/* ====================================================== */
-
 .linha-estatisticas {
   display: flex;
-  gap: 50px; /* Espaço entre os blocos de números */
+  gap: 50px;
 }
 
 .item-estatistica {
@@ -987,14 +981,14 @@ span {
 }
 
 .icone-caixa {
-  background-color: #ff8a4243;
+  background-color: #fe8337d8;
   border-radius: 8px;
   width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ff8c42; /* Ícone Laranja */
+  color: #ff8c42;
 }
 
 .texto-estatistica {
@@ -1016,12 +1010,10 @@ span {
   font-size: 12px;
 }
 
-/* ====================================================== */
 /* SEÇÃO: NOSSA MISSÃO E HISTÓRIA (Cartões de Anos)       */
-/* ====================================================== */
 
 .secao-missao {
-  background-color: #fdfaf6; /* Fundo creme/bege bem claro e elegante */
+  background-color: #fdfaf6;
   padding: 100px 20px;
 }
 
@@ -1029,15 +1021,14 @@ span {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide o ecrã em duas metades iguais */
-  gap: 80px; /* Dá bastante espaço entre o texto e os cartões */
-  align-items: center; /* Alinha tudo ao centro verticalmente */
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
 }
 
-/* --- Textos do Lado Esquerdo --- */
 .kicker-laranja {
   display: block;
-  color: #ff8c42; /* Laranja da identidade */
+  color: #ff8c42;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -1049,7 +1040,7 @@ span {
 .coluna-texto-missao h2 {
   font-family: "Poppins", sans-serif;
   text-align: left;
-  color: #172b43; /* Azul muito escuro para dar peso */
+  color: #172b43;
   font-size: 38px;
   font-weight: 700;
   margin: 0 0 25px 0;
@@ -1057,32 +1048,30 @@ span {
 
 .coluna-texto-missao p {
   font-family: "Poppins", sans-serif;
-  color: #4a5568; /* Um cinzento escuro, menos agressivo que o preto puro */
+  color: #4a5568;
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;
   text-align: justify;
 }
 
-/* --- Grelha de Cartões (Lado Direito) --- */
 .coluna-cards-missao {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Cria uma sub-grelha de 2 colunas para os cartões */
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
 .card-ano {
   background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.04); /* Borda quase impercetível */
+  border: 1px solid rgba(0, 0, 0, 0.04);
   border-radius: 12px;
   padding: 30px 25px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.119); /* Sombra elegante e difusa */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.119);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 
-/* Interatividade subtil ao passar o rato (mouse) */
 .card-ano:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
@@ -1091,7 +1080,7 @@ span {
 .ano-destaque {
   display: block;
   font-family: "Poppins", sans-serif;
-  color: #ff8c42; /* Laranja */
+  color: #ff8c42;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -1105,10 +1094,7 @@ span {
   margin: 0;
 }
 
-/* ====================================================== */
 /* SEÇÃO: PROJETOS EM AÇÃO (Cartões Coloridos)            */
-/* ====================================================== */
-
 .secao-programas {
   background-color: white;
   padding: 100px 20px;
@@ -1186,12 +1172,9 @@ span {
   font-size: 15px;
   line-height: 1.6;
   margin: 0;
-  opacity: 0.85; /* Suaviza levemente o texto do parágrafo em relação ao título */
+  opacity: 0.85;
 }
 
-/* --- TEMAS DE CORES INDIVIDUAIS DOS CARTÕES --- */
-
-/* 1. Tema Azul (Educação) */
 .card-azul {
   background-color: #f4f8ff;
 }
@@ -1205,7 +1188,6 @@ span {
   color: #2563eb;
 }
 
-/* 2. Tema Laranja (Alimentação) */
 .card-laranja {
   background-color: #fff8f0;
 }
@@ -1219,7 +1201,6 @@ span {
   color: #ea580c;
 }
 
-/* 3. Tema Verde (Trabalho) */
 .card-verde {
   background-color: #f0fdf4;
 }
@@ -1233,7 +1214,6 @@ span {
   color: #16a34a;
 }
 
-/* 4. Tema Roxo (Assistência) */
 .card-roxo {
   background-color: #faf5ff;
 }
@@ -1247,156 +1227,155 @@ span {
   color: #9333ea;
 }
 .secao-localizacao {
-    background-color: #172b43; /* O mesmo azul escuro do topo */
-    padding: 100px 20px;
-    font-family: "Poppins", sans-serif;
+  background-color: #172b43;
+  padding: 100px 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .cabecalho-localizacao {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .cabecalho-localizacao h2 {
-    color: white;
-    font-size: 38px;
-    font-weight: 700;
-    margin: 10px 0 0 0;
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 10px 0 0 0;
 }
 
 .container-localizacao {
-    max-width: 1100px;
-    margin: 0 auto;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* O Grid de 3 colunas */
 .grid-cards-loc {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .card-loc {
-    background-color: #1e3653; /* Um azul sutilmente mais claro que o fundo */
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 35px 30px;
-    transition: transform 0.3s ease;
+  background-color: #1e3653;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 35px 30px;
+  transition: transform 0.3s ease;
 }
 
 .card-loc:hover {
-    transform: translateY(-5px);
-    border-color: rgba(255, 140, 66, 0.3); /* Borda fica levemente laranja ao passar o mouse */
+  transform: translateY(-5px);
+  border-color: rgba(255, 140, 66, 0.3);
 }
 
 .icone-loc {
-    width: 45px;
-    height: 45px;
-    background-color: rgba(255, 140, 66, 0.1);
-    color: #ff8c42; /* Laranja */
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255, 140, 66, 0.1);
+  color: #ff8c42;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .card-loc h3 {
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 0 15px 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
 }
 
 .card-loc p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* Cartão Inferior Amplo */
 .card-contato-amplo {
-    background-color: #1e3653;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+  background-color: #1e3653;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
 
 .info-contato h3 {
-    color: white;
-    font-size: 22px;
-    margin: 0 0 20px 0;
+  color: white;
+  font-size: 22px;
+  margin: 0 0 20px 0;
 }
 
 .info-contato ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .info-contato li {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .info-contato li span {
-    color: #ff8c42;
-    font-size: 20px;
+  color: #ff8c42;
+  font-size: 20px;
 }
 
 .botoes-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 300px;
 }
 
 /* Botões do Contato */
-.btn-primario-loc, .btn-secundario-loc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    transition: all 0.3s ease;
+.btn-primario-loc,
+.btn-secundario-loc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
 }
 
 .btn-primario-loc {
-    background-color: #ff8c42;
-    color: white;
+  background-color: #ff8c42;
+  color: white;
 }
 
 .btn-primario-loc:hover {
-    background-color: #e67a35;
+  background-color: #e67a35;
 }
 
 .btn-secundario-loc {
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .btn-secundario-loc:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.5);
 }
-
 @media (max-width: 768px) {
   .card-horizontal {
     flex-direction: column;
@@ -1488,86 +1467,139 @@ span {
   }
 
   .hero-fundacao {
-        padding: 50px 20px 60px 20px; /* Reduz o espaço no topo e embaixo */
+    padding: 50px 20px 60px 20px; /* Reduz o espaço no topo e embaixo */
+  }
+
+  .hero-fundacao h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .container-hero {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .descricao-hero {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .barra-navegacao {
+    padding: 15px 10px;
+  }
+
+  .menu-navegacao {
+    display: flex;
+    flex-wrap: wrap; /* Faz os links quebrarem para a linha de baixo se não couberem */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu-navegacao a {
+    font-size: 13px;
+  }
+
+  .linha-estatisticas {
+    display: flex;
+    flex-direction: column; /* Força o empilhamento vertical */
+    width: 100%; /* Ocupa apenas o espaço real do celular */
+    gap: 20px;
+  }
+
+  .item-estatistica {
+    width: 100%;
+  }
+
+  /* --- 2. NOSSA MISSÃO E HISTÓRIA --- */
+  .secao-missao {
+    padding: 60px 20px;
+  }
+
+  .container-grid-missao {
+    grid-template-columns: 1fr; /* Coloca o texto em cima e os cartões embaixo */
+    gap: 40px;
+  }
+
+  .coluna-texto-missao p {
+    text-align: left;
+  }
+
+  .coluna-cards-missao {
+    grid-template-columns: 1fr; /* Empilha os 4 cartões de anos em uma única coluna */
+  }
+
+  /* --- 3. PROJETOS EM AÇÃO (PROGRAMAS) --- */
+  .secao-programas {
+    padding: 60px 20px;
+  }
+
+  .cabecalho-programas h2 {
+    font-size: 32px;
+  }
+
+  .grid-programas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-projeto {
+    padding: 30px 25px;
+  }
+
+  .secao-localizacao, 
+    .container-localizacao {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 
-    .hero-fundacao h1 {
-        font-size: 38px; /* Título menor para não quebrar muitas linhas na tela pequena */
-        line-height: 1.2;
+    .grid-cards-loc {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 15px !important;
     }
 
-    .container-hero {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
+    .card-loc {
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
-    .descricao-hero {
-        font-size: 15px;
-        margin-bottom: 40px;
+    .card-contato-amplo {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 25px 15px !important;
     }
 
-    .barra-navegacao {
-        padding: 15px 10px;
+    .info-contato, .info-contato ul {
+        width: 100% !important;
     }
 
-    .menu-navegacao {
-        display: flex;
-        flex-wrap: wrap; /* Faz os links quebrarem para a linha de baixo se não couberem */
-        justify-content: center;
-        gap: 10px;
+    .info-contato li {
+        width: 100% !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        word-break: break-all !important;
     }
 
-    .menu-navegacao a {
-        font-size: 13px; /* Diminui um pouquinho a fonte do menu no celular */
+ 
+    .botoes-contato {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        margin-top: 15px !important;
     }
 
-    .linha-estatisticas {
-        display: flex;
-        flex-direction: column; /* Força o empilhamento vertical */
-        width: 100%; /* Ocupa apenas o espaço real do celular */
-        gap: 20px;
+    .botoes-contato a {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        justify-content: center !important;
     }
 
-    .item-estatistica {
-        width: 100%; /* Garante que o item se ajuste perfeitamente */
-    }
-
-
-    /* --- 2. NOSSA MISSÃO E HISTÓRIA --- */
-    .secao-missao {
-        padding: 60px 20px;
-    }
-
-    .container-grid-missao {
-        grid-template-columns: 1fr; /* Coloca o texto em cima e os cartões embaixo */
-        gap: 40px;
-    }
-
-    .coluna-texto-missao p {
-        text-align: left; /* Tira o justificado para não criar "buracos" no texto no celular */
-    }
-
-    .coluna-cards-missao {
-        grid-template-columns: 1fr; /* Empilha os 4 cartões de anos em uma única coluna */
-    }
-
-
-    /* --- 3. PROJETOS EM AÇÃO (PROGRAMAS) --- */
-    .secao-programas {
-        padding: 60px 20px;
-    }
-
-    .cabecalho-programas h2 {
-        font-size: 32px;
-    }
-
-    .grid-programas {
-        grid-template-columns: 1fr; /* Empilha os cartões coloridos */
-        gap: 20px;
-    }
-
-    .card-projeto {
-        padding: 30px 25px; /* Reduz um pouco a "gordura" interna do cartão no mobile */
-    }
 }

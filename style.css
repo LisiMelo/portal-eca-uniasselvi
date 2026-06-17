@@ -2118,3 +2118,20 @@ span {
     gap: 15px;
   }
 }
+
+@media (max-width: 992px) {
+    .grid-canais-apoio {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-canais-apoio {
+        grid-template-columns: 1fr;
+    }
+    .container-rodape {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
